@@ -4,6 +4,8 @@ import { useState, useEffect, ChangeEvent, FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Cadastro.css'
 import { RotatingLines } from 'react-loader-spinner'
+import { cadastrarUsuario } from '../../../services/Service'
+import Usuario from '../../../models/Usuario'
 
 function Cadastro() {
 
