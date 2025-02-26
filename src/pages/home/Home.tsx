@@ -8,11 +8,11 @@ function Home() {
           <div className="flex flex-col gap-4 items-center justify-center py-4">
             <h2 className="text-5xl font-bold">Bem Vindos!</h2>
             <p className="text-xl">
-              Estamos aqui para apoiar você em sua jornada dentro da empresa.
-              Acesse nossos serviços para:
-              <p>✅ Solicitar férias e acompanhar holerites</p>
-              <p>✅ Conferir oportunidades de desenvolvimento e crescimento</p>
-              <p>✅ Tirar dúvidas com nossa equipe</p>
+              Aqui você encontra tudo para a segurança do seu automóvel!
+              <p>Acesse nossos serviços personalizados:</p>
+              <p>✅ Escolha sua seguradora</p>
+              <p>✅ Confira qual plano se encaixa as suas necessidades </p>
+              <p>✅ Tire dúvidas com nossa equipe</p>
               <p>Caso precise de ajuda, entre em contato conosco!</p>
             </p>
 
