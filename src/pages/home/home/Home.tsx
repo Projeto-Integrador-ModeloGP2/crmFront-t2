@@ -1,4 +1,3 @@
-
 function Home() {
   return (
     <>
@@ -27,7 +26,7 @@ function Home() {
 
           <div className="flex justify-center ">
             <img
-              src="https://img.freepik.com/vetores-gratis/agente-de-recrutamento-analisando-candidatos_74855-4565.jpg?t=st=1740495171~exp=1740498771~hmac=368568fa7f9cfabb0554b7ab7b238f5e05faa8dba988b34f250ecefc7d9948e4&w=1380"
+              src="/./home.png"
               alt="Imagem Página Home"
               className="w-3/3"
             />

@@ -16,8 +16,14 @@ function Navbar() {
           <Link to="/cliente" className="hover:opacity-75">
             Cliente
           </Link>
+          <Link to="/cadastrocliente" className="hover:opacity-75">
+            Cadastrar cliente
+          </Link>
           <Link to="/planos" className="hover:opacity-75">
             Planos
+          </Link>
+          <Link to="/cadastroplano" className="hover:opacity-75">
+           Cadastrar Plano
           </Link>
           <Link to="/integrante" className="hover:opacity-75">
             Sobre Nós
