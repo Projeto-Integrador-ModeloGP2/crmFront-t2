@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ChangeEvent, useEffect, useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import { useNavigate, useParams } from "react-router-dom";
@@ -111,13 +109,13 @@ function FormPlano() {
     return (
 <div className="container flex flex-col items-center justify-center mx-auto">
 <h1 className="text-4xl text-center my-8">
-                {id === undefined ? 'Cadastrar Plano' : 'Editar Plano'}
+                {id === undefined ?<strong>Cadastrar Plano</strong> : <strong>Editar Plano</strong>}
 </h1>
  
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovoPlano}>
                 {/* Nome */}
 <div className="flex flex-col gap-2">
-<label htmlFor="nome">Nome*</label>
+<label htmlFor="nome"><strong>Nome*</strong></label>
 <input
                         type="text"
                         placeholder="Digite o nome do plano"
@@ -131,7 +129,7 @@ function FormPlano() {
  
                 {/* Descrição */}
 <div className="flex flex-col gap-2">
-<label htmlFor="descricao">Descrição*</label>
+<label htmlFor="descricao"><strong>Descrição*</strong></label>
 <input
                         type="text"
                         placeholder="Descreva o plano"
@@ -145,7 +143,7 @@ function FormPlano() {
  
                 {/* Valor */}
 <div className="flex flex-col gap-2">
-<label htmlFor="valor">Valor* (entre 4 e 10 caracteres)</label>
+<label htmlFor="valor"><strong>Valor* (entre 4 e 10 caracteres)</strong></label>
 <input
                         type="text"
                         placeholder="Valor do plano"
@@ -161,7 +159,7 @@ function FormPlano() {
  
                 {/* Vigência */}
 <div className="flex flex-col gap-2">
-<label htmlFor="vigencia">Vigência*</label>
+<label htmlFor="vigencia"><strong>Vigência*</strong></label>
 <input
                         type="text"
                         placeholder="Vigência do plano"
@@ -175,7 +173,7 @@ function FormPlano() {
  
                 {/* Franquia */}
 <div className="flex flex-col gap-2">
-<label htmlFor="franquia">Franquia*</label>
+<label htmlFor="franquia"><strong>Franquia*</strong></label>
 <input
                         type="text"
                         placeholder="Franquia do plano"
@@ -189,7 +187,7 @@ function FormPlano() {
  
                 {/* Status */}
 <div className="flex flex-col gap-2">
-<label htmlFor="status">Status Ativo / Inativo</label>
+<label htmlFor="status"><strong>Status Ativo / Inativo</strong></label>
 <input
                         type="checkbox"
                         name='status'
@@ -215,7 +213,7 @@ function FormPlano() {
 </div> */}
  
                 <button
-                    className="rounded text-slate-100 bg-green-400 
+                    className="rounded text-black bg-[#37cf8d]
                                hover:bg-green-800 w-1/2 py-2 mx-auto flex justify-center"
                     type="submit">
                     {isLoading ?
@@ -226,7 +224,7 @@ function FormPlano() {
                             width="24"
                             visible={true}
                         /> :
-<span>{id === undefined ? 'Cadastrar' : 'Atualizar'}</span>
+<span>{id === undefined ? <strong>Cadastrar</strong> : <strong>Atualizar</strong>}</span>
                     }
 </button>
 </form>

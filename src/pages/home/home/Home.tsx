@@ -19,7 +19,7 @@ function Home() {
                 className="rounded text-black 
                                           border-black border-solid border-2 py-2 px-4"
               >
-                <a href="#">Saiba mais</a>
+                <a href="#"><strong>Saiba mais</strong></a>
               </div>
             </div>
           </div>

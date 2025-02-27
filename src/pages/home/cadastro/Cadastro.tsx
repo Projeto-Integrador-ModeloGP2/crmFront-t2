@@ -74,7 +74,7 @@ function Cadastro() {
         <div className="fundoCadastro hidden lg:block"></div>
         <form className='flex justify-center items-center flex-col w-2/3 gap-3' 
           onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-slate-900 text-5xl'>Cadastrar</h2>
+          <h2 className='text-slate-900 text-5xl'>Cadastrar Cliente</h2>
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
             <input
@@ -138,7 +138,7 @@ function Cadastro() {
           <div className="flex justify-around w-full gap-8">
 			<button 
                 type='reset'
-                className='rounded text-white bg-red-500 
+                className='rounded text-black bg-red-500 
                 hover:bg-red-700 w-1/2 py-2' 
                 onClick={retornar}
 			>
@@ -146,7 +146,7 @@ function Cadastro() {
             </button>
             <button 
                 type='submit'
-                className='rounded text-white bg-green-400 
+                className='rounded text-black bg-[#37cf8d]
                            hover:bg-green-700 w-1/2 py-2
                            flex justify-center' 
                 >
