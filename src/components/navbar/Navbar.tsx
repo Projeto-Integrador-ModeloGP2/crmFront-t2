@@ -22,8 +22,8 @@ function Navbar() {
           <Link to="/planos" className="hover:opacity-75">
             Planos
           </Link>
-          <Link to="/cadastroplano" className="hover:opacity-75">
-           Cadastrar Plano
+          <Link to='/cadastrarplano' className='hover:underline'>
+          Cadastrar Plano
           </Link>
           <Link to="/integrante" className="hover:opacity-75">
             Sobre Nós
