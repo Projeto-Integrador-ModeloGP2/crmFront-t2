@@ -18,7 +18,8 @@ function Navbar() {
           <Link to="/planos" className="hover:opacity-75">
             Planos
           </Link>
-          <Link to="/cadastroplano" className="hover:opacity-75">
+
+          <Link to="/cadastrarplano" className="hover:underline">
             Cadastrar Plano
           </Link>
           <Link to="/sobrenos" className="hover:opacity-75">

@@ -4,9 +4,11 @@ export default interface Plano {
   id: number;
   nome: string;
   descricao: string;
-  valor:number;
+  valor: string;
+  vigencia: string;
   franquia: string;
-  status: string;
-  usuario?: [] | null;
+  status?: boolean;
+  seguradora?:{} | null;
+  usuario?: string | null;
 
 }
