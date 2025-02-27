@@ -5,11 +5,7 @@ function Navbar() {
     <div className="w-full flex justify-center py-4 bg-[#37cf8d] text-black">
       <div className="container flex justify-between items-center text-lg">
         <Link to="/home" className="text-2xl flex items-center font-bold gap-2">
-          <img 
-            src="/logo.png" 
-            alt="Logo" 
-            className="w-10 h-10" 
-          />
+          <img src="/logo.png" alt="Logo" className="w-10 h-10" />
           Soluções em Seguros
         </Link>
         <div className="flex gap-4 font-bold">
@@ -23,9 +19,9 @@ function Navbar() {
             Planos
           </Link>
           <Link to="/cadastroplano" className="hover:opacity-75">
-           Cadastrar Plano
+            Cadastrar Plano
           </Link>
-          <Link to="/integrante" className="hover:opacity-75">
+          <Link to="/sobrenos" className="hover:opacity-75">
             Sobre Nós
           </Link>
         </div>
