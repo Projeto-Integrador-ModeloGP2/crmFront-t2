@@ -25,7 +25,8 @@ function CardUsuarios({ usuarios }: Props) {
             </div>
         </div>
         <div className="flex">
-            <Link to=''  className='w-full text-black-100 bg-[#37cf8d] hover:bg-green-700 
+            <Link to= {`/editarusuario/${usuarios.id}`}  
+            className='w-full text-black-100 bg-[#37cf8d] hover:bg-green-700 
             flex items-center justify-center py-2'>
             <button><strong>Editar</strong></button>
             </Link>

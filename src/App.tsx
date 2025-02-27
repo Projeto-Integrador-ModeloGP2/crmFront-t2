@@ -11,6 +11,7 @@ import FormPlanos from "./components/planos/formplanos/FormPlanos";
 import CardSobreNos from "./pages/sobrenos/cardsobrenos/CardSobreNos";
 import ListaUsuarios from "./components/usuario/listausuario/ListaUsuarios";
 import DeletarUsuario from "./components/usuario/deletarusuario/DeletarUsuario";
+import AtualizarUsuario from "./components/usuario/atualizarusuario/AtualizarUsuario";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/cliente" element={<ListaUsuarios />} />
             <Route path="/cadastrarusuario" element={<Cadastro />} />
             <Route path="/deletarusuario/:id" element={<DeletarUsuario />} />
+            <Route path="/editarusuario/:id" element={<AtualizarUsuario />} />
           </Routes>
         </div>
         <Footer />
