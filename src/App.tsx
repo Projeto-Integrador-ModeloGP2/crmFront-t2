@@ -3,12 +3,11 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/home/Home";
 import ListaPlanos from "./components/planos/listaplanos/ListaPlanos";
-
 import "./App.css";
-import Cadastro from "./pages/home/cadastro/Cadastro";
 import Login from "./pages/home/login/Login";
 import { AuthProvider } from "./context/UserContext";
 import ListaUsuarios from "./components/usuario/listausuario/ListaUsuarios";
+import Cadastro from "./pages/home/cadastro/Cadastro";
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/login" element={<Login />} />
             <Route path="/planos" element={<ListaPlanos />} />
-            <Route path="/cliente" element={<ListaUsuarios />} />
+            <Route path="/usuario" element={<ListaUsuarios />} />
           </Routes>
         </div>
         <Footer />
