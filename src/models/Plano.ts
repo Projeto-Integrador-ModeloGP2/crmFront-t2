@@ -1,4 +1,5 @@
-import Usuario from "./Usuario";
+/* eslint-disable @typescript-eslint/no-empty-object-type */
+
 
 export default interface Plano {
   id: number;
