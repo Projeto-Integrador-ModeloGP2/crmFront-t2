@@ -27,6 +27,7 @@ function App() {
             <Route path="/editarplano/:id" element={<FormPlanos />} />
             <Route path="/sobrenos" element={<CardSobreNos />} />
             <Route path="/cliente" element={<ListaUsuarios />} />
+            <Route path="/cadastrarusuario" element={<Cadastro />} />
           </Routes>
         </div>
         <Footer />

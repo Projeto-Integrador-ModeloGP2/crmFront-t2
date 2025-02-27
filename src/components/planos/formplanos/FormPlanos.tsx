@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ChangeEvent, useEffect, useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import { useNavigate, useParams } from "react-router-dom";
@@ -213,8 +215,8 @@ function FormPlano() {
 </div> */}
  
                 <button
-                    className="rounded text-slate-100 bg-indigo-400 
-                               hover:bg-indigo-800 w-1/2 py-2 mx-auto flex justify-center"
+                    className="rounded text-slate-100 bg-green-400 
+                               hover:bg-green-800 w-1/2 py-2 mx-auto flex justify-center"
                     type="submit">
                     {isLoading ?
             <RotatingLines

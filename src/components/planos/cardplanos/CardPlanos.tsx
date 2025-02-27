@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useNavigate } from 'react-router-dom';
 
 import { Link } from 'react-router-dom';
@@ -41,7 +42,7 @@ function CardPlanos({ plano, atualizaLista }: CardPlanosProps) {
  
     return (
 <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-<header className='py-2 px-6 bg-indigo-800 text-white font-bold text-2xl'>
+<header className='py-2 px-6 bg-green-800 text-white font-bold text-2xl'>
 
                 {plano.nome}
 </header>
@@ -57,7 +58,7 @@ function CardPlanos({ plano, atualizaLista }: CardPlanosProps) {
             <div className="flex">
 <Link to={`/formularioPlano/${plano.id}`} 
 
-                    className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-800 
+                    className='w-full text-slate-100 bg-green-400 hover:bg-green-700 
 
                         flex items-center justify-center py-2'>
 <button>Editar</button>
@@ -65,7 +66,7 @@ function CardPlanos({ plano, atualizaLista }: CardPlanosProps) {
  
                 <button onClick={handleDelete} 
 
-                    className='text-slate-100 bg-red-400 hover:bg-red-700 w-full 
+                    className='text-slate-100 bg-red-500 hover:bg-red-700 w-full 
 
                         flex items-center justify-center py-2'>
 

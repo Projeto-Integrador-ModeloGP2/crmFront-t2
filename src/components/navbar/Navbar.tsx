@@ -9,20 +9,20 @@ function Navbar() {
           Soluções em Seguros
         </Link>
         <div className="flex gap-4 font-bold">
-          <Link to="/cliente" className="hover:opacity-75">
+          <Link to="/cliente" className="hover:opacity-65">
             Cliente
           </Link>
-          <Link to="/cadastrocliente" className="hover:opacity-75">
+          <Link to="/cadastrarusuario" className="hover:opacity-65">
             Cadastrar cliente
           </Link>
-          <Link to="/planos" className="hover:opacity-75">
+          <Link to="/planos" className="hover:opacity-65">
             Planos
           </Link>
 
-          <Link to="/cadastrarplano" className="hover:underline">
+          <Link to="/cadastrarplano" className="hover:opacity-65">
             Cadastrar Plano
           </Link>
-          <Link to="/sobrenos" className="hover:opacity-75">
+          <Link to="/sobrenos" className="hover:opacity-65">
             Sobre Nós
           </Link>
         </div>
