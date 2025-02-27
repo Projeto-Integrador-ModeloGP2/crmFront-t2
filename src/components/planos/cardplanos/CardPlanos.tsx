@@ -1,10 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useNavigate } from 'react-router-dom';
-
 import { Link } from 'react-router-dom';
-
 import Plano from '../../../models/Plano';
-
 import { deletar } from '../../../services/Service';
  
 interface CardPlanosProps {
@@ -42,35 +38,34 @@ function CardPlanos({ plano, atualizaLista }: CardPlanosProps) {
  
     return (
 <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-<header className='py-2 px-6 bg-green-800 text-white font-bold text-2xl'>
-
+<header className='py-2 px-6 bg-[#37cf8d] text-black font-bold text-2xl'>
+ 
                 {plano.nome}
 </header>
-<div className='p-8 text-base bg-slate-200 h-full flex flex-col gap-2'>
-<p className='p-2 text-2xl bg-slate-200 h-full'>{plano.nome}</p>
-<p className='p-2 text-2xl bg-slate-200 h-full'>{plano.descricao}</p>
-<p className='p-2 text-2xl bg-slate-200 h-full'>{plano.valor}</p>
-<p className='p-2 text-2xl bg-slate-200 h-full'>{plano.vigencia}</p>
-<p className='p-2 text-2xl bg-slate-200 h-full'>{plano.franquia}</p>
-<p><strong>Status:</strong> {plano.status ? 'Ativo' : 'Inativo'}</p>
+<div className='p-8 text-base bg-white h-full flex flex-col gap-2'>
+<p className='p-2 text-1xl bg-white h-full'><strong>Descrição:</strong> {plano.descricao}</p>
+<p className='p-2 text-1xl bg-white h-full'><strong>Valor (R$):</strong> {plano.valor}</p>
+<p className='p-2 text-1xl bg-white h-full'><strong>Vigência:</strong> {plano.vigencia}</p>
+<p className='p-2 text-1xl bg-white h-full'><strong>Franquia (R$):</strong> {plano.franquia}</p>
+<p className='p-2 text-1xl bg-white h-full'><strong>Status:</strong> {plano.status ? 'Ativo' : 'Inativo'}</p>
 </div>
  
             <div className="flex">
-<Link to={`/formularioPlano/${plano.id}`} 
+<Link to={`/editarplano/${plano.id}`} 
 
-                    className='w-full text-slate-100 bg-green-400 hover:bg-green-700 
+                    className='w-full text-black-100 bg-[#37cf8d] hover:bg-green-700 
 
                         flex items-center justify-center py-2'>
-<button>Editar</button>
+<button><strong>Editar</strong></button>
 </Link>
  
                 <button onClick={handleDelete} 
 
-                    className='text-slate-100 bg-red-500 hover:bg-red-700 w-full 
+                    className='text-black-100 bg-red-500 hover:bg-red-700 w-full 
 
                         flex items-center justify-center py-2'>
 
-                    Deletar
+            <strong>Deletar</strong>
 </button>
 </div>
  
