@@ -7,10 +7,12 @@ import ListaPlanos from "./components/planos/listaplanos/ListaPlanos";
 import "./App.css";
 import Cadastro from "./pages/home/cadastro/Cadastro";
 import Login from "./pages/home/login/Login";
+import { AuthProvider } from "./context/UserContext";
 
 function App() {
   return (
     <>
+    <AuthProvider>
       <BrowserRouter>
         <Navbar />
         <div className="min-h-[80vh]">
@@ -24,6 +26,7 @@ function App() {
         </div>
         <Footer />
       </BrowserRouter>
+    </AuthProvider>
     </>
   );
 }
