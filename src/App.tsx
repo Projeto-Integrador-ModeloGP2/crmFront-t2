@@ -8,6 +8,7 @@ import "./App.css";
 import Cadastro from "./pages/home/cadastro/Cadastro";
 import Login from "./pages/home/login/Login";
 import { AuthProvider } from "./context/UserContext";
+import ListaUsuarios from "./components/usuario/listausuario/ListaUsuarios";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/login" element={<Login />} />
             <Route path="/planos" element={<ListaPlanos />} />
+            <Route path="/cliente" element={<ListaUsuarios />} />
           </Routes>
         </div>
         <Footer />
