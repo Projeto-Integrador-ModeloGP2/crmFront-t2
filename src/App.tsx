@@ -5,12 +5,11 @@ import Home from "./pages/home/home/Home";
 import ListaPlanos from "./components/planos/listaplanos/ListaPlanos";
 import "./App.css";
 
-import { AuthProvider } from "./context/UserContext";
-import ListaUsuarios from "./components/usuario/listausuario/ListaUsuarios";
 import Cadastro from "./pages/home/cadastro/Cadastro";
 import Login from "./pages/home/login/Login";
 import FormPlanos from "./components/planos/formplanos/FormPlanos";
 import CardSobreNos from "./pages/sobrenos/cardsobrenos/CardSobreNos";
+import ListaUsuarios from "./components/usuario/listausuario/ListaUsuarios";
 
 function App() {
   return (
@@ -27,6 +26,7 @@ function App() {
             <Route path="/cadastrarplano" element={<FormPlanos />} />
             <Route path="/editarplano/:id" element={<FormPlanos />} />
             <Route path="/sobrenos" element={<CardSobreNos />} />
+            <Route path="/cliente" element={<ListaUsuarios />} />
           </Routes>
         </div>
         <Footer />
