@@ -42,7 +42,6 @@ function ListaUsuarios() {
 <CardUsuarios
                 key={usuario.id}
                 usuarios={usuario}
-                atualizaLista={getUsuarios}
               />
             ))}
 </div>

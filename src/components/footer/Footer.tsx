@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import { GithubLogo } from "@phosphor-icons/react";
 
 function Footer() {

@@ -4,8 +4,9 @@ import { useState, useEffect, ChangeEvent, FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Cadastro.css'
 import { RotatingLines } from 'react-loader-spinner'
-import { cadastrarUsuario } from '../../../services/Service'
-import Usuario from '../../../models/Usuario'
+import Usuario from '../../models/Usuario'
+import { cadastrarUsuario } from '../../services/Service'
+
 
 function Cadastro() {
 
@@ -74,7 +75,7 @@ function Cadastro() {
         <div className="fundoCadastro hidden lg:block"></div>
         <form className='flex justify-center items-center flex-col w-2/3 gap-3' 
           onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-slate-900 text-5xl'>Cadastrar Cliente</h2>
+          <h2 className='text-slate-900 text-5xl'>Preencha seus dados</h2>
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
             <input

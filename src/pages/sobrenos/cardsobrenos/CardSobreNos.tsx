@@ -1,6 +1,6 @@
-import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
+
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react/dist/ssr";
-import { Link } from "react-router-dom";
+
 
 function CardSobreNos() {
   return (
