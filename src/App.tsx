@@ -5,12 +5,14 @@ import Home from "./pages/home/home/Home";
 import ListaPlanos from "./components/planos/listaplanos/ListaPlanos";
 import "./App.css";
 
-import Cadastro from "./pages/home/cadastro/Cadastro";
-import Login from "./pages/home/login/Login";
+
 import FormPlanos from "./components/planos/formplanos/FormPlanos";
 import CardSobreNos from "./pages/sobrenos/cardsobrenos/CardSobreNos";
 import ListaUsuarios from "./components/usuario/listausuario/ListaUsuarios";
 import DeletarUsuario from "./components/usuario/deletarusuario/DeletarUsuario";
+import AtualizarUsuario from "./components/usuario/atualizarusuario/AtualizarUsuario";
+import Cadastro from "./pages/cadastro/Cadastro";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
             <Route path="/cliente" element={<ListaUsuarios />} />
             <Route path="/cadastrarusuario" element={<Cadastro />} />
             <Route path="/deletarusuario/:id" element={<DeletarUsuario />} />
+            <Route path="/editarusuario/:id" element={<AtualizarUsuario />} />
           </Routes>
         </div>
         <Footer />

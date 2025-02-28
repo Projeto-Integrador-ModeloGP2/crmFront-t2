@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { RotatingLines } from "react-loader-spinner";
 import { buscar, deletar } from "../../../services/Service";
 import { useEffect, useState } from "react";
@@ -57,19 +59,19 @@ function DeletarUsuario() {
  
   return (
     <div className="container max-w-lg w-full mx-auto px-4">
-      <h1 className="text-3xl sm:text-4xl text-center my-4"><strong>Deletar Usuário</strong></h1>
+      <h1 className="text-3xl sm:text-4xl text-center my-4"><strong>Deletar Conta</strong></h1>
       <p className="text-center font-semibold mb-4 text-lg">
-        Você tem certeza de que deseja apagar o usuário a seguir?
+        Você tem certeza de que deseja apagar a sua conta?
       </p>
       <div className="border flex flex-col rounded-2xl overflow-hidden justify-between">
         <header className="py-3 px-6 bg-[#37cf8d] text-black font-bold text-xl sm:text-2xl">
-        <strong>Usuário</strong>
+        <strong>Dados de Cadastro</strong>
         </header>
-        <p className="p-6 sm:p-8 text-lg sm:text-2xl bg-white h-full">
+        <p className="p-6 sm:p-4 text-lg sm:text-2xl bg-white h-full">
         <strong>Nome:</strong> {usuario.nome}
         </p>
-        <p className="p-6 sm:p-8 text-lg sm:text-2xl bg-white h-full">
-          {usuario.usuario}
+        <p className="p-6 sm:p-4 text-lg sm:text-2xl bg-white h-full">
+        <strong>Usuario:</strong> {usuario.usuario}
         </p>
         <div className="flex flex-col sm:flex-row">
           <button
@@ -79,7 +81,7 @@ function DeletarUsuario() {
            <strong>Não</strong> 
           </button>
           <button
-            className="w-full text-black bg-[#37cf8d] hover:bg-indigo-700 flex items-center justify-center py-3 sm:py-2"
+            className="w-full text-black bg-[#37cf8d] hover:hover:bg-green-700 flex items-center justify-center py-3 sm:py-2"
             onClick={deletarUsuario}
           >
             {isLoading ? (

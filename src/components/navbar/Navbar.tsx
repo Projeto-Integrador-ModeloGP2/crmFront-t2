@@ -10,10 +10,10 @@ function Navbar() {
         </Link>
         <div className="flex gap-4 font-bold">
           <Link to="/cliente" className="hover:opacity-65 pr-5 border-r-2">
-            Cliente
+            Nossos Clientes
           </Link>
           <Link to="/cadastrarusuario" className="hover:opacity-65 pr-5 border-r-2">
-            Cadastrar Cliente 
+            Faça seu Cadastro
           </Link>
           <Link to="/planos" className="hover:opacity-65 pr-5 border-r-2">
             Planos
