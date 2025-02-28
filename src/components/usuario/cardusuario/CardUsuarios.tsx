@@ -18,14 +18,14 @@ function CardUsuarios({ usuarios }: Props) {
               usuarios.foto ||
               "https://upload.wikimedia.org/wikipedia/pt/b/bb/El_Chavo_Roberto_Bola%C3%B1os.png"
             }
-            className="h-12 rounded-full"
+            className="h-14 rounded-full"
             alt="Foto do usuário"
           />
           <h3 className="text-lg font-bold text-center uppercase">
             {usuarios.nome}
           </h3>
         </div>
-        <div className="p-4 ">
+        <div className="p-9 ">
           <h4 className="text-lg font-semibold uppercase">
             {" "}
             <strong>Dados</strong>

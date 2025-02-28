@@ -67,10 +67,10 @@ function DeletarUsuario() {
         <header className="py-3 px-6 bg-[#37cf8d] text-black font-bold text-xl sm:text-2xl">
         <strong>Dados de Cadastro</strong>
         </header>
-        <p className="p-6 sm:p-8 text-lg sm:text-2xl bg-white h-full">
+        <p className="p-6 sm:p-4 text-lg sm:text-2xl bg-white h-full">
         <strong>Nome:</strong> {usuario.nome}
         </p>
-        <p className="p-6 sm:p-8 text-lg sm:text-2xl bg-white h-full">
+        <p className="p-6 sm:p-4 text-lg sm:text-2xl bg-white h-full">
         <strong>Usuario:</strong> {usuario.usuario}
         </p>
         <div className="flex flex-col sm:flex-row">
