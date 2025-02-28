@@ -31,7 +31,7 @@ function Cadastro() {
   }, [usuario])
 
   function retornar(){
-    navigate('/login')
+    navigate('/home')
   }
 
   function atualizarEstado(e: ChangeEvent<HTMLInputElement>){
